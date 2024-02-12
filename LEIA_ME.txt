@@ -1,0 +1,29 @@
+"""
+EP1 de numérico
+
+Alunos: Murilo Costa Campos de Moura NUSP: 10705763
+        Marina Botelho de Mesquita NUSP: 10771156
+
+Professor: Clodoaldo Grotta Ragazzo
+Turma: 08
+"""
+
+O programa foi desevolvido em Python 3, e é necessário possuir os pacotes Numpy e matplotlib para executá-lo.
+
+O código está estruturado da seguinte forma: 
+
+- O primeiro input serve para escolher o método de solução da edp.
+Para o método explícito, deve-se inserir "1".
+Para o método de Euler implícito, deve-se inserir "2".
+Para o método de Crank-Nicolson,  deve-se inserir "3".
+
+- O segundo input serve para escolher qual equação será resolvida.
+Para a equação descrita na 1ª tarefa a), deve-se inserir "1". Obs.: Levamos em conta apenas a "nova" equação, dado que os testes com a equação proposta no enunciado inicial são facultativos.
+Para a equação descrita na 1ª tarefa b), deve-se inserir "2".
+Para a equação descrita na 1ª tarefa c), deve-se inserir "3".
+
+Após essas entradas iniciais, o programa entrará num loop que requisita um valor para N e um valor para lambda.
+
+Para cada N e lambda fornecidos, o programa então produzirá um gráfico com as curvas de temperatura a cada 0.1s e irá imprimir o valor calculado para o erro em T=1s (nos casos em que a solução exata é conhecida).
+
+Para realizar os testes de evolução do erro, fator de redução a cada refinamento de malha, e ordem de convergência, é necessário que o usuário realize, sequencialmente, testes com N=[10,20,40,80,160,320]. Os resultados serão exibidos quando o teste de N=320 for finalizado.
